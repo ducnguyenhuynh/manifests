@@ -33,7 +33,6 @@ rules:
   - taskruns
   - conditions
   - runs
-  - tasks
   verbs:
   - create
   - get

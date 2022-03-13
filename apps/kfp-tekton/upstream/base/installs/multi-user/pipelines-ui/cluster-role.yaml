@@ -46,7 +46,6 @@ rules:
   - pipelineruns
   - taskruns
   - conditions
-  - tasks
   verbs:
   - create
   - get

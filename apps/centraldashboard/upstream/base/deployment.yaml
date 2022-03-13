@@ -14,7 +14,7 @@ spec:
       labels:
         app: centraldashboard
       annotations:
-        sidecar.istio.io/inject: "true"
+        sidecar.istio.io/inject: "false"
     spec:
       containers:
       - name: centraldashboard
@@ -40,4 +40,6 @@ spec:
           value: $(CD_REGISTRATION_FLOW)
         - name: DASHBOARD_LINKS_CONFIGMAP
           value: $(CD_CONFIGMAP_NAME)
+        - name: APP_SECURE_COOKIES
+          value: "false"
       serviceAccountName: centraldashboard

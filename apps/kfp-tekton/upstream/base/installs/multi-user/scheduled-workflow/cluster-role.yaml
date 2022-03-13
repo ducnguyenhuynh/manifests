@@ -19,7 +19,6 @@ rules:
   - kubeflow.org
   resources:
   - scheduledworkflows
-  - scheduledworkflows/finalizers
   verbs:
   - create
   - get
@@ -42,7 +41,6 @@ rules:
   - taskruns
   - conditions
   - runs
-  - tasks
   verbs:
   - create
   - get
